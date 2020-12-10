@@ -2,3 +2,7 @@
 /.idea/
 *test*
 
+*.docs
+*.doc
+!report.docs
+!report.doc
