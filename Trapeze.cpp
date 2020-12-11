@@ -46,7 +46,7 @@ operator<<(std::ostream &out, const Trapeze<Tpoint,Tside> &trapeze) {
 }
 
 template<class Tpoint, class Tside>
-typename std::enable_if<is_int<Tpoint,Tside>::value, std::ostream &>::type
+std::ostream &
 operator<<(std::ostream &out, const Trapeze<Tpoint,Tside> &trapeze) {
     out << "I cant calculate coordinates, because the type is int" << std::endl;
     return out;
