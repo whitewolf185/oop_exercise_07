@@ -20,7 +20,7 @@
 #include "document.h"
 
 //нужно, чтобы было 2 одинаковых типа
-#define yourTYPE double, double
+#define yourTYPE int, int
 
 int main() {
     std::ofstream fout;
@@ -48,8 +48,8 @@ int main() {
         }
         else if (s == "s") {
             std::cin >> s;
-            fout.open(s, std::ios::in | std::ios::binary | std::ios::trunc);
-            if (fout.is_open()) {
+            fout.open(s, std::ios::out | std::ios::binary | std::ios::trunc);
+            if (!fout.is_open()) {
                 std::cout << "Cannot open this file" << std::endl;
             }
             else {
@@ -89,6 +89,7 @@ int main() {
             std::cout << "> \'p\' - print document" << std::endl;
             std::cout << "> \'u\' - undo changes" << std::endl;
             std::cout << "> \'h\' - show this message" << std::endl;
+            std::cout << "> \'e\' - exit\n" << std::endl;
         }
 
         else if(s == "e"){

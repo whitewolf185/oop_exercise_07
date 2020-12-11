@@ -38,7 +38,7 @@ public:
     friend typename std::enable_if<is_double<U,U>::value, std::ostream &>::type
     operator<<(std::ostream &out, const Trapeze<U,U> &trapeze) {
         Tside diff = (trapeze.A - trapeze.B) / 2.0;
-        double height = std::sqrt(trapeze.C * trapeze.C - diff * diff);
+        double height = std::sqrt(fabs(trapeze.C * trapeze.C - diff * diff));
         out << "Trapeze vertices: [";
         out << std::pair<U,U> (trapeze.point.first, trapeze.point.second) << ", ";
         out << std::pair<U,U> (trapeze.point.first + diff, trapeze.point.second + height) << ", ";

@@ -1,0 +1,31 @@
+> h
+> 'n' - create new document
+> 'o' - open document
+> 's' - save document
+> '+' - add a figure
+when you add figure:
+first - enter your position you want insert your figure
+second - enter figure ID:
+  1 - rhombus
+  2 - rectangle
+  3 - trapeze
+> '-' - remove a figure
+when you remove figure, enter your position you want to delete
+> 'p' - print document
+> 'u' - undo changes
+> 'h' - show this message
+> 'e' - exit
+
+> + 0 3
+Enter trapeze as follows: x y a b c
+x, y is a left bottom point cords
+a, b and c are larger, smaller base and height
+0 0 25 3 1
+> p
+Printing document:
+[1] Trapeze: [ I cant calculate coordinates, because the type is int ]
+
+
+> e
+
+Process finished with exit code 0

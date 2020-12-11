@@ -1,0 +1,47 @@
+> h
+> 'n' - create new document
+> 'o' - open document
+> 's' - save document
+> '+' - add a figure
+when you add figure:
+first - enter your position you want insert your figure
+second - enter figure ID:
+  1 - rhombus
+  2 - rectangle
+  3 - trapeze
+> '-' - remove a figure
+when you remove figure, enter your position you want to delete
+> 'p' - print document
+> 'u' - undo changes
+> 'h' - show this message
+> 'e' - exit
+
+> + 0 3
+Enter trapeze as follows: x y a b c
+x, y is a left bottom point cords
+a, b and c are larger, smaller base and height
+0 0 25 5 4
+> p
+Printing document:
+[1] Trapeze vertices: [(0, 0), (10, 9.16515), (15, 9.16515), (25, 0)]
+
+> s
+log.bin
+Saved document to log.bin
+> - 0
+> p
+Printing document:
+> o lob.bin
+No such file in directory
+> o
+log.bin
+Loaded document from log.bin
+> p
+Printing document:
+[1] Trapeze vertices: [(0, 0), (10, 9.16515), (15, 9.16515), (25, 0)]
+
+> u
+Nothing to undo!
+> e
+
+Process finished with exit code 0
