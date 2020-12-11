@@ -5,8 +5,8 @@ set(CMAKE_CXX_STANDARD 17)
 
 add_executable(oop_exercise_07 main.cpp
         Figures.h
-        Rectangle.cpp Rectangle.h
-        Rhombus.cpp Rhombus.h
-        Trapeze.cpp Trapeze.h
+        Rectangle.h
+        Rhombus.h
+        Trapeze.h
         factory.h
         document.h)
